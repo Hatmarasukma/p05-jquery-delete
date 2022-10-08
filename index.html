@@ -1,54 +1,126 @@
-<style>
-h1{font-family: sans-serif;
-	cursor: pointer;
-	transition: 0.2s;}
-	
-h2{font-family: sans-serif}
-h3{font-family: sans-serif; color: black}
-
-p{color: black; font-family: sans-serif}
-h1:hover{
-	color: #708090;
-	letter-spacing: 2px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+h1{font-family: sans-serif; color:#708090}
+body{
+   border: 13px groove #C0C0C0 ;
+   padding-top: 20px;
+   padding-right: 5px;
+   padding-bottom: 30px;
+   padding-left: 0px;
+background: linear-gradient(#F5F5F5,#C0C0C0,#BCC2C2)}
+table{
+   font-family: sans-serif;
+    color:#708090;
+    border-collapse: collapse;
+    width: 70%;
+    border: 1px solid #f2f5f7;
 }
-img{
-	width: 4cm;
-	border-radius: 50%;
-	box-shadow: 1px 1px 4px gray;
-	padding: 5px;
-	background: white;
-	margin: 15px;
-	transition: 0,2s;
-	opacity: 75%;
+table th {
+    background: #708090;
+    color: #f2f5f7;
+    font-weight: normal;
 }
-img:hover{
-	transform: scale(1.2);
-	opacity: 100%;
-	box-shadow: 1px 1px 6px #708090;
-
+table th,
+table td {
+    padding: 8px 20px;
+    text-align: center;
+ }
+ table tr {
+    background:	#DCDCDC;
+}
+table tr:hover {
+    background-color:#C0C0C0;
+}
+.table1 tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 </style>
-<body align=center bgcolor="#f2f2f2">
-	<table>
-<h1>Wilujeng Sumping!!!</h1>
-<p>Nami Abdi Siti Hatmara Sukma, NIM: 41226097</p>
-<h2> "ulah Kumeok memeh dipacok"</h2>
-<p><img src="foto/foto mara.jpg" align="middle"></p>
-
-<button onclick="alert('Ulah Kumeok memeh dipacok memiliki dua makna, yaitu makna denotasi dan makna konotasi. Makna denotasi adalah makna berdasarkan arti kata sesuai kamus. Sedangkan makna konotasi adalah makna kiasan. jadi makna konotasinya adalah jangan kalah sebelum bertanding, jangan menyerah sebelum berjuang, atau jangan menyerah sebelum berusaha.')"> klik untuk makna! Semoga bermanfaat :)</button>
-<h2>Some Good People at IKMI</h2>
-<p>
-          <a href="goodpeople.html"> <button>10 List Best People</button></a>
-        </p>
-<h2>"List 5 My Bestie"</h2>
-<p>
-          <a href="top5.html" > <button>Top 5 My Bestie</button></a>
-        </p>
-<p> <h2>"Formulir Pendaftaran Mahasiswa Baru"</h2>
-          <a href="formulirPMB.html" > <button>Formulir PMB</button></a>
-        </p>
-<p> <h2>"Formulir Pendaftaran Mahasiswa Baru level 2"</h2>
-          <a href="formulirPMBlv2.html" > <button>Formulir PMBlv2</button></a>
-        </p>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body align=center>
+<h1 align=center>"Top 5 Bestie"</h1>
+<table align=center border="1" cellpadding="10" cellspacing="0" class="tb-css">
+	<thead>
+		<tr class="tr-hd">
+			<th>Nomor</th>
+			<th>Nama</th>
+			<th>Alamat</th>
+			<th>Aksi</th>
+		</tr>
+	</thead>
+<tbody>
+	<tr id="row-1">
+		<td>1.</td>
+		<td class="nama">Silvi Lutfiyani</td>
+		<td class="alamat">Ciamis</td>
+		<td class="del-btn" id="del-btn_1">hapus</td>
+	</tr>
+	<tr id="row-2">
+		<td>2.</td>
+		<td class="nama">Syifa Nurpadilah</td>
+		<td class="alamat">Ciamis</td>
+		<td class="del-btn" id="del-btn_2">hapus</td>
+	</tr>
+	<tr id="row-3">
+		<td>3.</td>
+		<td class="nama">Nok Resti</td>
+		<td class="alamat">Ciamis</td>
+		<td class="del-btn" id="del-btn_3">hapus</td>
+	</tr>
+	<tr id="row-4">
+		<td>4.</td>
+		<td class="nama">Yasni Optarina</td>
+		<td class="alamat">Ciamis</td>
+		<td class="del-btn" id="del-btn_4">hapus</td>
+	</tr>
+	<tr id="row-5">
+		<td>5.</td>
+		<td class="nama">Suci Lestari</td>
+		<td class="alamat">Ciamis</td>
+		<td class="del-btn" id="del-btn_5">hapus</td>
+	</tr>
 </table>
-</body> 
+	<p>
+          <a  href="index.html" > <button>Back Home</button></a>
+          <a  href="goodpeople.html" > <button>10 List Best People</button></a>
+        </p>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script type="text/javascript">
+
+    		$(document).ready(function(){
+			$('.nama').click(function(){
+				let nama = $(this).text()
+				let edit = prompt('Edit Nama:', nama)
+
+				if(!edit) return
+				$(this).text(edit)
+			})
+			$('.alamat').click(function(){
+				let alamat = $(this).text()
+				let edit = prompt('Edit Alamat:', alamat)
+
+				if(!edit) return
+				$(this).text(edit)
+			})
+			$('.del-btn').click(function(){
+				let yakin = confirm('Anda yakin ingin menghapusnya?')
+
+				if(!yakin) return
+				let id = $(this).prop('id')
+				let rid = id.split('_')
+				let baris = rid[1]
+				$('#row-'+baris).fadeOut()
+			})
+		})
+
+    	</script>
+</body>
+</html>
